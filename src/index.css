@@ -1,0 +1,22 @@
+﻿:root {
+    --background-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --primary-color: #bb86fc;
+
+    scrollbar-gutter: stable;
+    scrollbar-color: var(--primary-color) transparent;
+}
+
+body {
+    scrollbar-gutter: stable;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+
+    &:has(dialog[open]) {
+        overflow: hidden;
+    }
+}
