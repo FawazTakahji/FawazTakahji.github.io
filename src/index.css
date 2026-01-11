@@ -1,6 +1,7 @@
 ﻿:root {
     --background-color: #121212;
-    --card-bg: #1e1e1e;
+    --secondary-background: #1e1e1e;
+    --card-bg: var(--secondary-background);
     --text-color: #e0e0e0;
     --primary-color: #bb86fc;
 

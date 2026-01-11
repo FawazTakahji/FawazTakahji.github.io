@@ -72,8 +72,9 @@
 
 .footer {
     padding: 30px 20px;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--primary-color);
     margin-top: 20px;
+    background-color: var(--secondary-background);
 }
 
 .footerLinks {
