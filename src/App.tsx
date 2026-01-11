@@ -4,6 +4,8 @@ import items from './items.ts'
 import type { project } from "./common/types.ts";
 import { useState } from "react";
 import { Dialog } from "./components/Dialog.tsx";
+import { GithubIcon, KofiIcon, DiscordIcon } from "./svg.ts";
+import { ContactLink } from "./components/ContactLink.tsx";
 
 function App() {
     const [selectedProject, setSelectedProject] = useState<project | null>(null);
@@ -65,6 +67,23 @@ function App() {
                     })}
                 </section>
             </div>
+
+            <footer className={styles.footer}
+                    id="footer">
+                <div className={styles.footerLinks}>
+                    <ContactLink link="https://github.com/FawazTakahji"
+                                 text="FawazTakahji"
+                                 icon={GithubIcon} />
+
+                    <ContactLink link="https://ko-fi.com/fawaztk"
+                                 text="fawaztk"
+                                 icon={KofiIcon} />
+
+                    <ContactLink link="https://discord.com/users/228825096360296448"
+                                 text="pardofelis."
+                                 icon={DiscordIcon} />
+                </div>
+            </footer>
         </div>
     )
 }

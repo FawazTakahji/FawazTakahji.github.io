@@ -12,11 +12,17 @@
         color: var(--primary-color);
     }
 
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-weight: bold;
+    }
+
     nav a {
         color: var(--text-color);
         text-decoration: none;
         margin: 0 15px;
-        font-weight: bold;
         transition: color 0.3s;
 
         &:hover {
@@ -62,4 +68,17 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
     gap: 10px;
     justify-content: center;
+}
+
+.footer {
+    padding: 30px 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    gap: 10px 40px;
+    flex-wrap: wrap;
 }
